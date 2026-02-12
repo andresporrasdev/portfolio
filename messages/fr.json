@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "about": "À propos",
+    "terminal": "Terminal",
+    "journey": "Parcours",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Andres Porras",
+    "title": "Développeur Full Stack",
+    "subtitle": "Je crée des expériences web modernes avec plus de 6 ans d'expertise en React, Node.js, Java et plus. Basé en Ontario, Canada — prêt à construire quelque chose de génial.",
+    "cta_projects": "Voir mes projets",
+    "cta_contact": "Me contacter",
+    "status": "Ouvert aux opportunités",
+    "scroll": "Défiler pour explorer"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "L'histoire derrière le code",
+    "bio_1": "Je suis un développeur Full Stack basé en Ontario, Canada avec plus de 6 ans d'expérience dans la création d'applications web, des sites WordPress servant des milliers d'utilisateurs aux applications MERN full-stack.",
+    "bio_2": "Mon parcours a commencé en Colombie, où j'ai dirigé les opérations IT dans une école et créé des sites web pour divers clients. En 2023, j'ai déménagé au Canada et obtenu mon diplôme avec mention du programme de programmation informatique du Collège Algonquin. Je suis actuellement bénévole en tant que développeur pour Landseed.ca, une plateforme canadienne connectant les passionnés de mini-maisons avec des propriétaires fonciers.",
+    "bio_3": "J'apporte une combinaison unique de compétences techniques et de sensibilité au design — je suis aussi à l'aise avec Figma et Illustrator qu'avec React et Node.js. Je suis aussi trilingue, parlant anglais, français et espagnol.",
+    "languages": "Langues",
+    "english": "Anglais",
+    "french": "Français",
+    "spanish": "Espagnol",
+    "activity": "Activité de codage",
+    "location": "Localisation",
+    "location_value": "Ontario, Canada"
+  },
+  "terminal": {
+    "title": "Terminal interactif",
+    "subtitle": "Explorez mon profil via un CLI — tapez 'help' pour les commandes ou posez-moi une question",
+    "welcome": "Bienvenue ! Tapez 'help' pour les commandes disponibles, ou posez-moi une question sur Andres...",
+    "placeholder": "Tapez une commande ou une question...",
+    "ai_thinking": "Réflexion en cours...",
+    "rate_limit": "Limite de chat IA atteinte pour cette session. Essayez les commandes statiques comme 'help', 'skills', 'projects'."
+  },
+  "journey": {
+    "title": "Parcours professionnel",
+    "subtitle": "De la Colombie au Canada — une chronologie de croissance et d'innovation"
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Une sélection de travaux dont je suis fier",
+    "view_all": "Voir tous les projets",
+    "view_project": "Voir le projet",
+    "live_site": "Site en ligne",
+    "source_code": "Code source",
+    "featured": "En vedette",
+    "filter_all": "Tous",
+    "stars": "Étoiles",
+    "forks": "Forks",
+    "back": "Retour à tous les projets",
+    "tech_stack": "Technologies",
+    "gallery": "Galerie",
+    "readme": "README",
+    "updated": "Dernière mise à jour"
+  },
+  "skills": {
+    "title": "Compétences et outils",
+    "subtitle": "Technologies avec lesquelles je travaille quotidiennement"
+  },
+  "education": {
+    "title": "Formation",
+    "subtitle": "Construire des bases solides",
+    "honors": "Mention d'honneur",
+    "gpa": "MPC"
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Vous avez un projet en tête ou envie de discuter ? J'aimerais avoir de vos nouvelles.",
+    "name": "Nom",
+    "email": "Courriel",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé ! Je vous répondrai bientôt.",
+    "error": "Une erreur s'est produite. Veuillez réessayer ou m'envoyer un courriel directement.",
+    "download_resume": "Télécharger le CV",
+    "name_placeholder": "Votre nom",
+    "email_placeholder": "votre@courriel.com",
+    "message_placeholder": "Parlez-moi de votre projet ou opportunité..."
+  },
+  "footer": {
+    "built_with": "Construit avec Next.js, Tailwind CSS et Framer Motion",
+    "copyright": "Andres Porras. Tous droits réservés."
+  },
+  "common": {
+    "theme_toggle": "Changer le thème",
+    "language": "Langue",
+    "back_home": "Retour à l'accueil"
+  }
+}

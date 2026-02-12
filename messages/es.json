@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "about": "Acerca de",
+    "terminal": "Terminal",
+    "journey": "Trayectoria",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "education": "Educación",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Andres Porras",
+    "title": "Desarrollador Full Stack",
+    "subtitle": "Construyendo experiencias web modernas con más de 6 años de experiencia en React, Node.js, Java y más. Basado en Ontario, Canadá — listo para construir algo genial.",
+    "cta_projects": "Ver mis proyectos",
+    "cta_contact": "Contáctame",
+    "status": "Abierto a oportunidades",
+    "scroll": "Desplaza para explorar"
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "subtitle": "La historia detrás del código",
+    "bio_1": "Soy un desarrollador Full Stack con sede en Ontario, Canadá con más de 6 años de experiencia construyendo aplicaciones web, desde sitios WordPress que sirven a miles de usuarios hasta aplicaciones MERN full-stack.",
+    "bio_2": "Mi trayectoria comenzó en Colombia, donde lideré las operaciones de TI en un colegio y construí sitios web para diversos clientes. En 2023, me mudé a Canadá y me gradué con honores del programa de Programación Informática del Algonquin College. Actualmente soy voluntario como desarrollador en Landseed.ca, una plataforma canadiense que conecta entusiastas de casas pequeñas con propietarios de terrenos.",
+    "bio_3": "Aporto una combinación única de habilidades técnicas y sensibilidad de diseño — me siento cómodo con Figma e Illustrator tanto como con React y Node.js. También soy trilingüe, hablando inglés, francés y español.",
+    "languages": "Idiomas",
+    "english": "Inglés",
+    "french": "Francés",
+    "spanish": "Español",
+    "activity": "Actividad de codificación",
+    "location": "Ubicación",
+    "location_value": "Ontario, Canadá"
+  },
+  "terminal": {
+    "title": "Terminal interactiva",
+    "subtitle": "Explora mi perfil a través de un CLI — escribe 'help' para comandos o hazme una pregunta",
+    "welcome": "¡Bienvenido! Escribe 'help' para comandos disponibles, o pregúntame cualquier cosa sobre Andres...",
+    "placeholder": "Escribe un comando o pregunta...",
+    "ai_thinking": "Pensando...",
+    "rate_limit": "Límite de chat IA alcanzado para esta sesión. Prueba comandos estáticos como 'help', 'skills', 'projects'."
+  },
+  "journey": {
+    "title": "Trayectoria profesional",
+    "subtitle": "De Colombia a Canadá — una línea de tiempo de crecimiento e innovación"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Una selección de trabajos de los que estoy orgulloso",
+    "view_all": "Ver todos los proyectos",
+    "view_project": "Ver proyecto",
+    "live_site": "Sitio en vivo",
+    "source_code": "Código fuente",
+    "featured": "Destacado",
+    "filter_all": "Todos",
+    "stars": "Estrellas",
+    "forks": "Forks",
+    "back": "Volver a todos los proyectos",
+    "tech_stack": "Tecnologías",
+    "gallery": "Galería",
+    "readme": "README",
+    "updated": "Última actualización"
+  },
+  "skills": {
+    "title": "Habilidades y herramientas",
+    "subtitle": "Tecnologías con las que trabajo diariamente"
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Construyendo bases sólidas",
+    "honors": "Honores",
+    "gpa": "Promedio"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "¿Tienes un proyecto en mente o quieres conversar? Me encantaría saber de ti.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Te responderé pronto.",
+    "error": "Algo salió mal. Por favor intenta de nuevo o envíame un correo directamente.",
+    "download_resume": "Descargar CV",
+    "name_placeholder": "Tu nombre",
+    "email_placeholder": "tu@correo.com",
+    "message_placeholder": "Cuéntame sobre tu proyecto u oportunidad..."
+  },
+  "footer": {
+    "built_with": "Construido con Next.js, Tailwind CSS y Framer Motion",
+    "copyright": "Andres Porras. Todos los derechos reservados."
+  },
+  "common": {
+    "theme_toggle": "Cambiar tema",
+    "language": "Idioma",
+    "back_home": "Volver al inicio"
+  }
+}

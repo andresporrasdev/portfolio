@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "about": "About",
+    "terminal": "Terminal",
+    "journey": "Journey",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Andres Porras",
+    "title": "Full Stack Developer",
+    "subtitle": "Building modern web experiences with 6+ years of expertise in React, Node.js, Java, and beyond. Based in Ontario, Canada — ready to build something great.",
+    "cta_projects": "View My Work",
+    "cta_contact": "Get in Touch",
+    "status": "Open to Opportunities",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "The story behind the code",
+    "bio_1": "I'm a Full Stack Developer based in Ontario, Canada with over 6 years of experience building web applications, from WordPress sites serving thousands of users to full-stack MERN applications.",
+    "bio_2": "My journey started in Colombia, where I led IT operations at a school and built websites for diverse clients. In 2023, I moved to Canada and graduated with Honours from Algonquin College's Computer Programming program. I'm currently volunteering as a developer with Landseed.ca, a Canadian platform connecting tiny house enthusiasts with landowners.",
+    "bio_3": "I bring a unique combination of technical skills and design sensibility — I'm comfortable with Figma and Illustrator just as much as with React and Node.js. I'm also trilingual, speaking English, French, and Spanish.",
+    "languages": "Languages",
+    "english": "English",
+    "french": "French",
+    "spanish": "Spanish",
+    "activity": "Coding Activity",
+    "location": "Location",
+    "location_value": "Ontario, Canada"
+  },
+  "terminal": {
+    "title": "Interactive Terminal",
+    "subtitle": "Explore my profile through a CLI — type 'help' for commands or ask me anything",
+    "welcome": "Welcome! Type 'help' for available commands, or ask me anything about Andres...",
+    "placeholder": "Type a command or question...",
+    "ai_thinking": "Thinking...",
+    "rate_limit": "AI chat limit reached for this session. Try static commands like 'help', 'skills', 'projects'."
+  },
+  "journey": {
+    "title": "Career Journey",
+    "subtitle": "From Colombia to Canada — a timeline of growth and innovation"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of work I'm proud of",
+    "view_all": "View All Projects",
+    "view_project": "View Project",
+    "live_site": "Live Site",
+    "source_code": "Source Code",
+    "featured": "Featured",
+    "filter_all": "All",
+    "stars": "Stars",
+    "forks": "Forks",
+    "back": "Back to all projects",
+    "tech_stack": "Tech Stack",
+    "gallery": "Gallery",
+    "readme": "README",
+    "updated": "Last updated"
+  },
+  "skills": {
+    "title": "Skills & Tools",
+    "subtitle": "Technologies I work with daily"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Building strong foundations",
+    "honors": "Honours",
+    "gpa": "GPA"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have a project in mind or want to chat? I'd love to hear from you.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "error": "Something went wrong. Please try again or email me directly.",
+    "download_resume": "Download Resume",
+    "name_placeholder": "Your name",
+    "email_placeholder": "your@email.com",
+    "message_placeholder": "Tell me about your project or opportunity..."
+  },
+  "footer": {
+    "built_with": "Built with Next.js, Tailwind CSS & Framer Motion",
+    "copyright": "Andres Porras. All rights reserved."
+  },
+  "common": {
+    "theme_toggle": "Toggle theme",
+    "language": "Language",
+    "back_home": "Back to home"
+  }
+}
