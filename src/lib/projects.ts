@@ -30,7 +30,7 @@ export async function resolveAllProjects(): Promise<ProjectWithData[]> {
       return {
         ...project,
         resolvedTitle:
-          project.title || repoData?.description?.split(" - ")[0] || project.repo || project.slug,
+          project.title || project.repo || project.slug,
         resolvedDescription:
           project.description || readmeDescription || repoData?.description || "",
         resolvedTechStack:
@@ -70,7 +70,7 @@ export async function resolveProject(
   return {
     ...project,
     resolvedTitle:
-      project.title || repoData?.description?.split(" - ")[0] || project.repo || project.slug,
+      project.title || project.repo || project.slug,
     resolvedDescription:
       project.description || readmeDescription || repoData?.description || "",
     resolvedTechStack: project.techStack || repoData?.topics || [],
