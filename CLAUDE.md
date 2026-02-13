@@ -129,9 +129,9 @@ npm run lint         # ESLint
 | Landseed.ca (featured) | Full Stack | No — private repo |
 | liceocervantes.edu.co (featured) | WordPress/CMS | No — local data |
 | Charity Portal (featured) | Full Stack | Yes — public repo `Charity-Portal` |
-| Traffic Volumes | Full Stack | Yes — public repo `Traffic-Volumes` |
-| ACME College REST API | API | Yes — public repo `REST-ACME-College` |
-| Android Multi-App | Mobile | Yes — public repo `Android-Multi-App` |
+| Traffic Volumes | Full Stack | Yes — public repo `Traffic-Volumes-Provincial-Highway-System` |
+| ACME College REST API | API | Yes — public repo `acme-college-rest-api` |
+| Android Multi-App | Mobile | Yes — public repo `FinalProjectAndroid` |
 | Acrilicol.com | Full Stack | No — WordPress + Python backend |
 | tuwatch.co | WordPress/CMS | No — e-commerce, Divi + jQuery |
 | seguridadlaboralnasbec.com | WordPress/CMS | No — Divi |
