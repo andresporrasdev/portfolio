@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ExternalLink, Github, Star, GitFork } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { Badge } from "@/components/ui/Badge";
 import { staggerContainer, fadeInUp } from "@/lib/animations";
@@ -103,70 +104,84 @@ function ProjectCard({
   t: ReturnType<typeof useTranslations>;
   featured?: boolean;
 }) {
+  const thumbnail = project.resolvedScreenshots[0];
+  const isExternal = thumbnail?.startsWith("http");
+
   return (
     <motion.div variants={fadeInUp}>
       <Link href={`/projects/${project.slug}`}>
-        <div
-          className={`group rounded-xl border border-border bg-card overflow-hidden transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 ${
-            featured ? "p-6" : "p-5"
-          }`}
-        >
-          <div className="flex items-start justify-between mb-3">
-            <div>
-              {project.featured && (
-                <Badge variant="accent" className="mb-2">
-                  {t("featured")}
+        <div className="group rounded-xl border border-border bg-card overflow-hidden transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5">
+          {thumbnail && (
+            <div className="relative aspect-video overflow-hidden bg-black/5">
+              <Image
+                src={thumbnail}
+                alt={project.resolvedTitle}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes={featured ? "(max-width: 768px) 100vw, 50vw" : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"}
+                unoptimized={isExternal}
+              />
+            </div>
+          )}
+
+          <div className={featured ? "p-6" : "p-5"}>
+            <div className="flex items-start justify-between mb-3">
+              <div>
+                {project.featured && (
+                  <Badge variant="accent" className="mb-2">
+                    {t("featured")}
+                  </Badge>
+                )}
+                <h3
+                  className={`font-heading font-semibold group-hover:text-accent transition-colors ${
+                    featured ? "text-xl" : "text-lg"
+                  }`}
+                >
+                  {project.resolvedTitle}
+                </h3>
+              </div>
+              <div className="flex items-center gap-3 text-muted">
+                {project.repoData && (
+                  <>
+                    {project.repoData.stars > 0 && (
+                      <span className="flex items-center gap-1 text-xs">
+                        <Star className="h-3 w-3" /> {project.repoData.stars}
+                      </span>
+                    )}
+                    {project.repoData.forks > 0 && (
+                      <span className="flex items-center gap-1 text-xs">
+                        <GitFork className="h-3 w-3" /> {project.repoData.forks}
+                      </span>
+                    )}
+                  </>
+                )}
+              </div>
+            </div>
+
+            <p className="text-sm text-muted mb-4 line-clamp-2">
+              {project.resolvedDescription}
+            </p>
+
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.resolvedTechStack.slice(0, 5).map((tech) => (
+                <Badge key={tech} variant="outline">
+                  {tech}
                 </Badge>
-              )}
-              <h3
-                className={`font-heading font-semibold group-hover:text-accent transition-colors ${
-                  featured ? "text-xl" : "text-lg"
-                }`}
-              >
-                {project.resolvedTitle}
-              </h3>
+              ))}
             </div>
-            <div className="flex items-center gap-3 text-muted">
-              {project.repoData && (
-                <>
-                  {project.repoData.stars > 0 && (
-                    <span className="flex items-center gap-1 text-xs">
-                      <Star className="h-3 w-3" /> {project.repoData.stars}
-                    </span>
-                  )}
-                  {project.repoData.forks > 0 && (
-                    <span className="flex items-center gap-1 text-xs">
-                      <GitFork className="h-3 w-3" /> {project.repoData.forks}
-                    </span>
-                  )}
-                </>
+
+            <div className="flex items-center gap-3 text-xs text-muted">
+              {project.liveUrl && (
+                <span className="flex items-center gap-1 hover:text-accent-teal">
+                  <ExternalLink className="h-3 w-3" /> {t("live_site")}
+                </span>
+              )}
+              {project.repo && (
+                <span className="flex items-center gap-1 hover:text-accent">
+                  <Github className="h-3 w-3" /> {t("source_code")}
+                </span>
               )}
             </div>
-          </div>
-
-          <p className="text-sm text-muted mb-4 line-clamp-2">
-            {project.resolvedDescription}
-          </p>
-
-          <div className="flex flex-wrap gap-2 mb-4">
-            {project.resolvedTechStack.slice(0, 5).map((tech) => (
-              <Badge key={tech} variant="outline">
-                {tech}
-              </Badge>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-3 text-xs text-muted">
-            {project.liveUrl && (
-              <span className="flex items-center gap-1 hover:text-accent-teal">
-                <ExternalLink className="h-3 w-3" /> {t("live_site")}
-              </span>
-            )}
-            {project.repo && (
-              <span className="flex items-center gap-1 hover:text-accent">
-                <Github className="h-3 w-3" /> {t("source_code")}
-              </span>
-            )}
           </div>
         </div>
       </Link>

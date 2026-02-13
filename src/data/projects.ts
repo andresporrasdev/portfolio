@@ -18,7 +18,14 @@ export const projects: Project[] = [
     description:
       "School website serving 10,000+ monthly visitors. Designed and maintained during 6 years as IT Senior Technician. Built with WordPress and Elementor, featuring responsive design and optimized performance.",
     techStack: ["WordPress", "Elementor", "PHP", "MySQL", "CSS"],
-    screenshots: ["/images/projects/liceocervantes-1.png"],
+    screenshots: [
+      "/images/projects/liceocervantes-1.png",
+      "/images/projects/liceocervantes-2.png",
+      "/images/projects/liceocervantes-3.png",
+      "/images/projects/liceocervantes-4.png",
+      "/images/projects/liceocervantes-5.png",
+      "/images/projects/liceocervantes-6.png",
+    ],
     liveUrl: "https://liceocervantes.edu.co",
     featured: true,
     category: "WordPress/CMS",
