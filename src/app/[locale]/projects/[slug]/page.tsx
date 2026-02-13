@@ -134,7 +134,18 @@ export default async function ProjectPage({
         {project.readmeContent && (
           <div className="mb-8">
             <h2 className="font-heading text-xl font-semibold mb-4">README</h2>
-            <div className="rounded-xl border border-border bg-card p-6 prose prose-invert max-w-none prose-headings:font-heading prose-a:text-accent prose-code:text-accent-teal prose-pre:bg-background prose-pre:border prose-pre:border-border">
+            <div className="rounded-xl border border-border bg-card p-6 prose prose-invert max-w-none
+              prose-headings:font-heading
+              prose-h1:text-2xl prose-h1:border-b prose-h1:border-border prose-h1:pb-2
+              prose-h2:text-xl prose-h2:border-b prose-h2:border-border prose-h2:pb-2
+              prose-h3:text-lg
+              prose-a:text-accent prose-a:no-underline hover:prose-a:underline
+              prose-code:text-accent-teal prose-code:before:content-none prose-code:after:content-none
+              prose-pre:bg-background prose-pre:border prose-pre:border-border
+              prose-img:rounded-lg
+              prose-hr:border-border
+              prose-th:border-border prose-td:border-border
+              prose-li:marker:text-muted">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {project.readmeContent}
               </ReactMarkdown>
