@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
     techStack: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
   },
   {
-    company: "Acrilicol.co",
+    company: "Acrilicol.com",
     role: "Full Stack Developer (Part-time)",
     period: "2024 - Present",
     location: "Remote",

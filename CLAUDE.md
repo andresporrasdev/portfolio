@@ -132,7 +132,7 @@ npm run lint         # ESLint
 | Traffic Volumes | Full Stack | Yes — public repo `Traffic-Volumes` |
 | ACME College REST API | API | Yes — public repo `REST-ACME-College` |
 | Android Multi-App | Mobile | Yes — public repo `Android-Multi-App` |
-| Acrilicol.co | Full Stack | No — WordPress + Python backend |
+| Acrilicol.com | Full Stack | No — WordPress + Python backend |
 | tuwatch.co | WordPress/CMS | No — e-commerce, Divi + jQuery |
 | seguridadlaboralnasbec.com | WordPress/CMS | No — Divi |
 | ybpublicidad.com | WordPress/CMS | No — WordPress + Node.js intranet |

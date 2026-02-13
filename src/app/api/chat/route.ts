@@ -9,7 +9,7 @@ Key facts about Andres:
 - Design skills: Figma, Illustrator, Photoshop
 - Education: Algonquin College (Computer Engineering Technology, Honours, 3.66 GPA)
 - Previously: IT Senior Tech & Web Developer at Cervantes School (Colombia, 2013-2019)
-- Freelance developer (2019-2022): tuwatch.co, seguridadlaboralnasbec.com, acrilicol.co, ybpublicidad.com
+- Freelance developer (2019-2022): tuwatch.co, seguridadlaboralnasbec.com, acrilicol.com, ybpublicidad.com
 - Projects: Charity Portal (MERN stack), Traffic Volumes (Django), Landseed.ca (volunteer)
 - Trilingual: English, French, Spanish
 - Currently open to full-time software developer positions
