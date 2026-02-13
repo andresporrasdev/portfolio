@@ -31,25 +31,24 @@ export function EducationSection() {
             <motion.div
               key={edu.institution}
               variants={fadeInUp}
-              className="rounded-xl border border-border bg-card p-6 relative overflow-hidden"
+              className="rounded-xl border border-border bg-card p-6"
             >
-              {edu.honors && (
-                <div className="absolute top-4 right-4">
-                  <Badge variant="gold">
-                    <Award className="h-3 w-3" />
-                    {t("honors")}
-                  </Badge>
-                </div>
-              )}
-
               <div className="flex items-center gap-3 mb-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent-gold/10">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-accent-gold/10">
                   <GraduationCap className="h-6 w-6 text-accent-gold" />
                 </div>
-                <div>
-                  <h3 className="font-heading text-lg font-semibold">
-                    {edu.degree}
-                  </h3>
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h3 className="font-heading text-lg font-semibold">
+                      {edu.degree}
+                    </h3>
+                    {edu.honors && (
+                      <Badge variant="gold">
+                        <Award className="h-3 w-3" />
+                        {t("honors")}
+                      </Badge>
+                    )}
+                  </div>
                   <p className="text-sm text-accent">{edu.institution}</p>
                 </div>
               </div>

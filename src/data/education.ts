@@ -12,10 +12,11 @@ export const education: Education[] = [
       "Graduated with Honours. Focused on full-stack web development, mobile applications, database management, and software engineering principles.",
   },
   {
-    institution: "Uniapel - Universidad Autónoma Popular del Estado de Puebla",
+    institution: "Uniapel",
     degree: "Computer Technician",
     period: "2007 - 2009",
     location: "Colombia",
+    gpa: "3.36",
     description:
       "Foundation in computer science fundamentals, hardware, networking, and technical support.",
   },
