@@ -10,6 +10,7 @@ interface ButtonProps {
   onClick?: () => void;
   type?: "button" | "submit";
   disabled?: boolean;
+  external?: boolean;
 }
 
 export function Button({
@@ -21,6 +22,7 @@ export function Button({
   onClick,
   type = "button",
   disabled,
+  external,
 }: ButtonProps) {
   const classes = cn(
     "inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200",
@@ -37,6 +39,14 @@ export function Button({
     },
     className
   );
+
+  if (href && external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+        {children}
+      </a>
+    );
+  }
 
   if (href) {
     return (

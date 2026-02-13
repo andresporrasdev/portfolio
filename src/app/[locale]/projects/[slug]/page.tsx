@@ -52,7 +52,7 @@ export default async function ProjectPage({
 
             <div className="flex items-center gap-3">
               {project.liveUrl && (
-                <Button href={project.liveUrl} size="sm">
+                <Button href={project.liveUrl} size="sm" external>
                   <ExternalLink className="h-4 w-4" />
                   Live Site
                 </Button>
@@ -62,6 +62,7 @@ export default async function ProjectPage({
                   href={`https://github.com/andresporrasdev/${project.repo}`}
                   variant="secondary"
                   size="sm"
+                  external
                 >
                   <Github className="h-4 w-4" />
                   Source
