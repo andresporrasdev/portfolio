@@ -7,6 +7,7 @@ import { resolveProject } from "@/lib/projects";
 import { projects } from "@/data/projects";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
+import { ProjectGallery } from "@/components/ui/ProjectGallery";
 
 export async function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -122,21 +123,10 @@ export default async function ProjectPage({
             <h2 className="font-heading text-xl font-semibold mb-4">
               Gallery
             </h2>
-            <div className="grid gap-4">
-              {project.resolvedScreenshots.map((src, i) => (
-                <div
-                  key={i}
-                  className="rounded-xl border border-border overflow-hidden bg-card"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={src}
-                    alt={`${project.resolvedTitle} screenshot ${i + 1}`}
-                    className="w-full h-auto"
-                  />
-                </div>
-              ))}
-            </div>
+            <ProjectGallery
+              screenshots={project.resolvedScreenshots}
+              projectTitle={project.resolvedTitle}
+            />
           </div>
         )}
 
