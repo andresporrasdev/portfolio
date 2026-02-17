@@ -2,6 +2,8 @@
 
 Personal portfolio website built with Next.js 16, showcasing my projects, skills, and career journey as a Full Stack Developer.
 
+![Portfolio Screenshot](public/images/projects/Portfolio.png)
+
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss)
