@@ -32,9 +32,21 @@ export const projects: Project[] = [
   },
   // === Public GitHub Repos (auto-fetched) ===
   {
+    slug: "portfolio",
+    repo: "portfolio",
+    featured: true,
+    category: "Full Stack",
+  },
+  {
     slug: "charity-portal",
     repo: "Charity-Portal",
     featured: true,
+    category: "Full Stack",
+  },
+  {
+    slug: "guitar-collection-database",
+    repo: "GuitarCollectionDatabase",
+    featured: false,
     category: "Full Stack",
   },
   {
@@ -69,9 +81,9 @@ export const projects: Project[] = [
   },
   {
     slug: "tuwatch",
-    title: "tuwatch.co",
+    title: "Tuwatch.co",
     description:
-      "Responsive e-commerce platform for browsing, searching, and purchasing products. Handled frontend design, backend development, and database administration.",
+      "Responsive e-commerce platform for browsing, searching, and purchasing products. Launched social media campaign that increased sales to 60K CAD yearly. Handled frontend design, backend development, and database administration.",
     techStack: ["WordPress", "Divi", "JavaScript", "jQuery", "MySQL"],
     screenshots: ["/images/projects/tuwatch-1.png"],
     liveUrl: "https://tuwatch.co",
@@ -80,7 +92,7 @@ export const projects: Project[] = [
   },
   {
     slug: "seguridad-laboral-nasbec",
-    title: "seguridadlaboralnasbec.com",
+    title: "Seguridadlaboralnasbec.com",
     description:
       "Corporate website for occupational safety company. Built with WordPress and Divi Builder, featuring professional design and responsive layout.",
     techStack: ["WordPress", "Divi", "CSS"],
@@ -91,9 +103,9 @@ export const projects: Project[] = [
   },
   {
     slug: "yb-publicidad",
-    title: "ybpublicidad.com",
+    title: "YbPublicidad.com",
     description:
-      "Landing page for customer acquisition plus a Node.js intranet backend for customers and employees featuring task queue and work management.",
+      "Landing page for customer acquisition plus a Node.js intranet backend for customers and employees featuring task queue and work management. Produced advertising campaigns (Facebook Ads, Google Ads, TikTok Ads) achieving views up to 125K.",
     techStack: ["WordPress", "Node.js", "JavaScript", "MySQL"],
     screenshots: ["/images/projects/ybpublicidad-1.png"],
     liveUrl: "https://ybpublicidad.com",

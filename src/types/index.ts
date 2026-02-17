@@ -29,6 +29,7 @@ export interface GitHubRepoData {
   topics: string[];
   updatedAt: string;
   homepage: string | null;
+  defaultBranch: string;
 }
 
 export interface ProjectWithData extends Project {

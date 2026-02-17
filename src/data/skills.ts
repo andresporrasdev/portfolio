@@ -64,6 +64,7 @@ export const skills: SkillCategory[] = [
     title: "CMS & Platforms",
     skills: [
       { name: "WordPress" },
+      { name: "Joomla" },
       { name: "Elementor" },
       { name: "Divi" },
       { name: "Android SDK" },

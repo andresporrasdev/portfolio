@@ -56,7 +56,7 @@ export const timeline: TimelineMilestone[] = [
     type: "education",
     location: "Ontario, Canada",
     projects: ["charity-portal"],
-    achievements: ["Honours Graduate", "3.66 GPA"],
+    achievements: ["Honours Graduate", "Dean's Honours List (Fall 2023)", "3.66 GPA"],
   },
   {
     year: "2024",

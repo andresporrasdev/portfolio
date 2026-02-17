@@ -36,6 +36,7 @@ export async function getRepoData(
       topics: data.topics || [],
       updatedAt: data.updated_at,
       homepage: data.homepage,
+      defaultBranch: data.default_branch || "main",
     };
   } catch {
     return null;
@@ -64,26 +65,34 @@ export async function getRepoReadme(
   }
 }
 
-export function parseReadmeImages(readme: string): string[] {
+export function parseReadmeImages(
+  readme: string,
+  repoName: string,
+  defaultBranch: string = "main"
+): string[] {
   const images: string[] = [];
 
   // Match markdown images: ![alt](url)
   const mdImageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
   let match;
   while ((match = mdImageRegex.exec(readme)) !== null) {
-    images.push(resolveGitHubImageUrl(match[2]));
+    images.push(resolveGitHubImageUrl(match[2], repoName, defaultBranch));
   }
 
   // Match HTML img tags: <img src="url" />
   const htmlImageRegex = /<img[^>]+src=["']([^"']+)["']/gi;
   while ((match = htmlImageRegex.exec(readme)) !== null) {
-    images.push(resolveGitHubImageUrl(match[1]));
+    images.push(resolveGitHubImageUrl(match[1], repoName, defaultBranch));
   }
 
   return images;
 }
 
-function resolveGitHubImageUrl(url: string): string {
+function resolveGitHubImageUrl(
+  url: string,
+  repoName: string,
+  defaultBranch: string
+): string {
   // Already absolute URL
   if (url.startsWith("http://") || url.startsWith("https://")) {
     return url;
@@ -91,7 +100,7 @@ function resolveGitHubImageUrl(url: string): string {
 
   // Relative path — convert to raw GitHub URL
   const cleanPath = url.replace(/^\.\//, "");
-  return `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${cleanPath}`;
+  return `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${repoName}/${defaultBranch}/${cleanPath}`;
 }
 
 export function parseReadmeDescription(readme: string): string {

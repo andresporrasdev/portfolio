@@ -3,13 +3,13 @@ import type { Education } from "@/types";
 export const education: Education[] = [
   {
     institution: "Algonquin College",
-    degree: "Computer Engineering Technology",
+    degree: "Computer Programming",
     period: "2023 - 2024",
     location: "Ottawa, ON, Canada",
     gpa: "3.66",
     honors: true,
     description:
-      "Graduated with Honours. Focused on full-stack web development, mobile applications, database management, and software engineering principles.",
+      "Graduated with Honours. Named to the Dean's Honours List (Fall 2023). Focused on full-stack web development, mobile applications, database management, and software engineering principles.",
   },
   {
     institution: "Uniapel",

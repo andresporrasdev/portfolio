@@ -20,8 +20,8 @@ export async function resolveAllProjects(): Promise<ProjectWithData[]> {
         ]);
       }
 
-      const readmeImages = readmeContent
-        ? parseReadmeImages(readmeContent)
+      const readmeImages = readmeContent && project.repo
+        ? parseReadmeImages(readmeContent, project.repo, repoData?.defaultBranch)
         : [];
       const readmeDescription = readmeContent
         ? parseReadmeDescription(readmeContent)
@@ -62,7 +62,9 @@ export async function resolveProject(
     ]);
   }
 
-  const readmeImages = readmeContent ? parseReadmeImages(readmeContent) : [];
+  const readmeImages = readmeContent && project.repo
+    ? parseReadmeImages(readmeContent, project.repo, repoData?.defaultBranch)
+    : [];
   const readmeDescription = readmeContent
     ? parseReadmeDescription(readmeContent)
     : "";

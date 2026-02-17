@@ -37,9 +37,10 @@ export const experiences: Experience[] = [
     description:
       "Delivered custom web solutions for diverse clients, from e-commerce platforms to corporate websites.",
     achievements: [
-      "Built tuwatch.co e-commerce platform (WordPress, Divi, jQuery, MySQL)",
+      "Built tuwatch.co e-commerce platform, launched social media campaign increasing sales to 60K CAD yearly",
       "Created seguridadlaboralnasbec.com corporate site",
       "Developed ybpublicidad.com with Node.js intranet backend",
+      "Produced content for advertising campaigns (Facebook Ads, Google Ads, TikTok Ads) achieving views up to 125K",
       "Managed full project lifecycle from design to deployment",
     ],
     techStack: [

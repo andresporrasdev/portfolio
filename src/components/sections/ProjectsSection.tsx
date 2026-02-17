@@ -172,9 +172,15 @@ function ProjectCard({
 
             <div className="flex items-center gap-3 text-xs text-muted">
               {project.liveUrl && (
-                <span className="flex items-center gap-1 hover:text-accent-teal">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="flex items-center gap-1 hover:text-accent-teal"
+                >
                   <ExternalLink className="h-3 w-3" /> {t("live_site")}
-                </span>
+                </a>
               )}
               {project.repo && (
                 <span className="flex items-center gap-1 hover:text-accent">

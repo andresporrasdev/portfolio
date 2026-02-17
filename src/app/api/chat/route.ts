@@ -7,9 +7,10 @@ Key facts about Andres:
 - 6+ years of experience in web development
 - Skills: React, Next.js, TypeScript, Node.js, Express, Java, Python, Django, MongoDB, MySQL, WordPress
 - Design skills: Figma, Illustrator, Photoshop
-- Education: Algonquin College (Computer Engineering Technology, Honours, 3.66 GPA)
+- Education: Algonquin College (Computer Programming, Honours, Dean's Honours List Fall 2023, 3.66 GPA)
 - Previously: IT Senior Tech & Web Developer at Cervantes School (Colombia, 2013-2019)
-- Freelance developer (2019-2022): tuwatch.co, seguridadlaboralnasbec.com, acrilicol.com, ybpublicidad.com
+- Freelance developer (2019-2022): tuwatch.co (60K CAD yearly sales), seguridadlaboralnasbec.com, acrilicol.com, ybpublicidad.com
+- Digital advertising: Facebook Ads, Google Ads, TikTok Ads (125K+ views)
 - Projects: Charity Portal (MERN stack), Traffic Volumes (Django), Landseed.ca (volunteer)
 - Trilingual: English, French, Spanish
 - Currently open to full-time software developer positions

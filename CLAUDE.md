@@ -36,7 +36,7 @@ Personal portfolio website for Andres Porras, a Full Stack Developer based in On
 4. JourneySection — animated career timeline Colombia -> Canada
 5. ProjectsSection — bento grid with auto-fetched GitHub data
 6. SkillsSection — categorized skill groups
-7. EducationSection — Algonquin (honours), Uniapel
+7. EducationSection — Algonquin (honours, Dean's Honours List Fall 2023, GPA 3.66), Uniapel (GPA 3.36)
 8. ContactSection — form + social links + resume download
 
 ### Data Layer
@@ -49,7 +49,7 @@ Personal portfolio website for Andres Porras, a Full Stack Developer based in On
 
 ### GitHub Auto-Fetch
 - Public repos in `projects.ts` only need `{ slug, repo, category }` — everything else comes from GitHub API + README
-- `src/lib/github.ts` — `getRepoData()`, `getRepoReadme()`, `parseReadmeImages()`, `parseReadmeDescription()`
+- `src/lib/github.ts` — `getRepoData()`, `getRepoReadme()`, `parseReadmeImages(readme, repoName, defaultBranch)`, `parseReadmeDescription()`
 - `src/lib/projects.ts` — `resolveAllProjects()` merges local data with GitHub-fetched data
 - ISR caches for 1 hour; optional `GITHUB_TOKEN` env var for higher rate limits
 
@@ -122,20 +122,22 @@ npm run build        # Production build
 npm run lint         # ESLint
 ```
 
-## Projects in Portfolio (10 total)
+## Projects in Portfolio (12 total)
 
 | Project | Type | Auto-fetch |
 |---------|------|-----------|
 | Landseed.ca (featured) | Full Stack | No — private repo |
 | liceocervantes.edu.co (featured) | WordPress/CMS | No — local data |
+| Portfolio (featured) | Full Stack | Yes — public repo `portfolio` |
 | Charity Portal (featured) | Full Stack | Yes — public repo `Charity-Portal` |
+| GuitarCollectionDatabase | Full Stack | Yes — public repo `GuitarCollectionDatabase` |
 | Traffic Volumes | Full Stack | Yes — public repo `Traffic-Volumes-Provincial-Highway-System` |
 | ACME College REST API | API | Yes — public repo `acme-college-rest-api` |
 | Android Multi-App | Mobile | Yes — public repo `FinalProjectAndroid` |
 | Acrilicol.com | Full Stack | No — WordPress + Python backend |
-| tuwatch.co | WordPress/CMS | No — e-commerce, Divi + jQuery |
-| seguridadlaboralnasbec.com | WordPress/CMS | No — Divi |
-| ybpublicidad.com | WordPress/CMS | No — WordPress + Node.js intranet |
+| Tuwatch.co | WordPress/CMS | No — e-commerce, Divi + jQuery |
+| Seguridadlaboralnasbec.com | WordPress/CMS | No — Divi |
+| YbPublicidad.com | WordPress/CMS | No — WordPress + Node.js intranet |
 
 ## Owner Info
 
