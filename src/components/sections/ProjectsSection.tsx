@@ -108,8 +108,8 @@ function ProjectCard({
   const isExternal = thumbnail?.startsWith("http");
 
   return (
-    <motion.div variants={fadeInUp}>
-      <Link href={`/projects/${project.slug}`}>
+    <motion.div variants={fadeInUp} className="min-w-0">
+      <Link href={`/projects/${project.slug}`} className="block">
         <div className="group rounded-xl border border-border bg-card overflow-hidden transition-all hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5">
           {thumbnail && (
             <div className="relative aspect-video overflow-hidden bg-black/5">
