@@ -15,11 +15,11 @@ export default async function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
-      <TerminalSection />
       <JourneySection />
-      <ProjectsSection projects={projects} />
       <SkillsSection />
+      <ProjectsSection projects={projects} />
       <EducationSection />
+      <TerminalSection />
       <ContactSection />
     </>
   );
