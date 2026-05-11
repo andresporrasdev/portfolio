@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid message" }, { status: 400 });
     }
 
-    const apiKey = process.env.ANTHROPIC_API_KEY;
+    const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey) {
       return NextResponse.json(
         { error: "AI not configured" },
@@ -40,28 +40,29 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
+    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": apiKey,
-        "anthropic-version": "2023-06-01",
+        "Authorization": `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "claude-haiku-4-5-20251001",
+        model: "deepseek/deepseek-r1:free",
         max_tokens: 150,
-        system: SYSTEM_PROMPT,
-        messages: [{ role: "user", content: message }],
+        messages: [
+          { role: "system", content: SYSTEM_PROMPT },
+          { role: "user", content: message },
+        ],
       }),
     });
 
     if (!res.ok) {
-      throw new Error(`Anthropic API error: ${res.status}`);
+      throw new Error(`OpenRouter API error: ${res.status}`);
     }
 
     const data = await res.json();
     const response =
-      data.content?.[0]?.text || "Sorry, I couldn't process that request.";
+      data.choices?.[0]?.message?.content || "Sorry, I couldn't process that request.";
 
     return NextResponse.json({ response });
   } catch {
