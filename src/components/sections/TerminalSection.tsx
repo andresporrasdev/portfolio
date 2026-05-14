@@ -16,7 +16,7 @@ interface TerminalLine {
   content: string;
 }
 
-const MAX_AI_MESSAGES = 5;
+const MAX_AI_MESSAGES = 10;
 const AI_SESSION_KEY = "terminal-ai-count";
 
 const staticCommands: Record<string, () => string> = {
@@ -158,10 +158,11 @@ export function TerminalSection() {
       if (!res.ok) throw new Error("API error");
 
       const data = await res.json();
-      incrementAiCount();
+      const isError = !data.response || data.response.startsWith("AI is currently");
+      if (!isError) incrementAiCount();
       setLines((prev) => [
         ...prev,
-        { type: "ai", content: data.response },
+        { type: isError ? "error" : "ai", content: data.response },
       ]);
     } catch {
       setLines((prev) => [
