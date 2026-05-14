@@ -57,7 +57,8 @@ export async function POST(request: NextRequest) {
     });
 
     if (!res.ok) {
-      throw new Error(`OpenRouter API error: ${res.status}`);
+      const errorBody = await res.text();
+      throw new Error(`OpenRouter ${res.status}: ${errorBody}`);
     }
 
     const data = await res.json();
@@ -65,9 +66,10 @@ export async function POST(request: NextRequest) {
       data.choices?.[0]?.message?.content || "Sorry, I couldn't process that request.";
 
     return NextResponse.json({ response });
-  } catch {
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
     return NextResponse.json(
-      { response: "AI is currently unavailable. Try static commands like 'help', 'about', 'skills'." },
+      { response: `DEBUG: ${message}` },
       { status: 200 }
     );
   }
