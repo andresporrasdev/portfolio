@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
         "Authorization": `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "deepseek/deepseek-r1:free",
+        model: "deepseek/deepseek-v4-flash:free",
         max_tokens: 150,
         messages: [
           { role: "system", content: SYSTEM_PROMPT },
@@ -57,8 +57,7 @@ export async function POST(request: NextRequest) {
     });
 
     if (!res.ok) {
-      const errorBody = await res.text();
-      throw new Error(`OpenRouter ${res.status}: ${errorBody}`);
+      throw new Error(`OpenRouter API error: ${res.status}`);
     }
 
     const data = await res.json();
@@ -66,10 +65,9 @@ export async function POST(request: NextRequest) {
       data.choices?.[0]?.message?.content || "Sorry, I couldn't process that request.";
 
     return NextResponse.json({ response });
-  } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
+  } catch {
     return NextResponse.json(
-      { response: `DEBUG: ${message}` },
+      { response: "AI is currently unavailable. Try static commands like 'help', 'about', 'skills'." },
       { status: 200 }
     );
   }
